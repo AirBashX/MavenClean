@@ -8,7 +8,7 @@ import cn.airbash.javaMavn.Redis.test01Jedis.untity.User;
 import redis.clients.jedis.Jedis;
 
 /**
- * hash���ʹ洢����
+ * hash数值操作
  * @author ZSP
  */
 public class Test03RedisHash {
