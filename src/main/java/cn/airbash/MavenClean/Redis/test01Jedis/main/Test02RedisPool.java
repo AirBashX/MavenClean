@@ -1,6 +1,6 @@
-package cn.airbash.javaMaven.Redis.test01Jedis.main;
+package cn.airbash.MavenClean.Redis.test01Jedis.main;
 
-import cn.airbash.javaMaven.Redis.test01Jedis.Util.RedisUtil;
+import cn.airbash.MavenClean.Redis.test01Jedis.Util.RedisUtil;
 import redis.clients.jedis.Jedis;
 import redis.clients.jedis.JedisPool;
 import redis.clients.jedis.JedisPoolConfig;

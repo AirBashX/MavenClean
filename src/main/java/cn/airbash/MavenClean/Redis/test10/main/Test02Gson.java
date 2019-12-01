@@ -1,6 +1,6 @@
-package cn.airbash.javaMaven.Redis.test10.main;
+package cn.airbash.MavenClean.Redis.test10.main;
 
-import cn.airbash.javaMaven.Redis.test10.pojo.Student;
+import cn.airbash.MavenClean.Redis.test10.pojo.Student;
 /**
  * ���Լ����ܷ��ȡ��redis
  */

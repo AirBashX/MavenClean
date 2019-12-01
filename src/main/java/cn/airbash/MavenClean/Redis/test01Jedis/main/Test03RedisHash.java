@@ -1,10 +1,10 @@
-package cn.airbash.javaMaven.Redis.test01Jedis.main;
+package cn.airbash.MavenClean.Redis.test01Jedis.main;
 
 import java.util.HashMap;
 import java.util.Map;
 
-import cn.airbash.javaMaven.Redis.test01Jedis.Util.RedisUtil;
-import cn.airbash.javaMaven.Redis.test01Jedis.untity.User;
+import cn.airbash.MavenClean.Redis.test01Jedis.Util.RedisUtil;
+import cn.airbash.MavenClean.Redis.test01Jedis.untity.User;
 import redis.clients.jedis.Jedis;
 
 /**

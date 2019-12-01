@@ -1,4 +1,4 @@
-package cn.airbash.javaMaven.Redis.test01Jedis.main;
+package cn.airbash.MavenClean.Redis.test01Jedis.main;
 
 import redis.clients.jedis.Jedis;
 

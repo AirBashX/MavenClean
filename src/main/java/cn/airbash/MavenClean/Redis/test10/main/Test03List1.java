@@ -1,4 +1,4 @@
-package cn.airbash.javaMaven.Redis.test10.main;
+package cn.airbash.MavenClean.Redis.test10.main;
 
 import java.util.Random;
 import java.util.UUID;
