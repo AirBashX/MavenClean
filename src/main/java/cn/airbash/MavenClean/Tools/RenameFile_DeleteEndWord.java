@@ -11,7 +11,7 @@ public class RenameFile_DeleteEndWord {
 	public static void main(String[] args) {
 		
 		System.out.println("程序开始");
-		String FatherMkdir="E:\\百度网盘\\day01 搭建环境 CMS服务端开发\\视频\\";
+		String FatherMkdir="E:\\百度网盘\\day02 CMS前端开发\\视频\\";
 		File file = new File(FatherMkdir);
 		File[] listFiles = file.listFiles();
 		for(File f:listFiles) {
