@@ -1,6 +1,6 @@
-package cn.airbash.MavenClean.Redis.test01Jedis.main;
+package cn.airbash.MavenClean.Redis.Jedis.test01Jedis.main;
 
-import cn.airbash.MavenClean.Redis.test01Jedis.Util.RedisUtil;
+import cn.airbash.MavenClean.Redis.Jedis.test01Jedis.Util.RedisUtils;
 import redis.clients.jedis.Jedis;
 import redis.clients.jedis.JedisPool;
 import redis.clients.jedis.JedisPoolConfig;
@@ -44,8 +44,8 @@ public class Test02RedisPool {
 	 * 连接池增加/获取String数据
 	 */
 	public static void test02() {
-		Jedis jedis = RedisUtil.getJedis();
-		Test01RedisClient.add(jedis);
-		RedisUtil.close(jedis);
+		Jedis jedis = RedisUtils.getJedis();
+		//Test01RedisClient.add(jedis);
+		RedisUtils.close(jedis);
 	}
 }

@@ -1,4 +1,4 @@
-package cn.airbash.MavenClean.Redis.test10.pojo;
+package cn.airbash.MavenClean.Redis.Jedis.test10.pojo;
 
 import java.io.Serializable;
 

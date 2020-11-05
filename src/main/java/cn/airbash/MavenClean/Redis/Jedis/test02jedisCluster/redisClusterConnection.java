@@ -1,4 +1,4 @@
-package cn.airbash.MavenClean.Redis.test02jedisCluster;
+package cn.airbash.MavenClean.Redis.Jedis.test02jedisCluster;
 
 import java.util.HashSet;
 import java.util.Set;

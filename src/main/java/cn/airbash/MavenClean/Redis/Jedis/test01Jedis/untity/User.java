@@ -1,4 +1,4 @@
-package cn.airbash.MavenClean.Redis.test01Jedis.untity;
+package cn.airbash.MavenClean.Redis.Jedis.test01Jedis.untity;
 
 public class User {
 	private Integer id;

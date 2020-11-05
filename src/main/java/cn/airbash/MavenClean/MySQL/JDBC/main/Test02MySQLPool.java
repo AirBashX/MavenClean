@@ -1,4 +1,4 @@
-package cn.airbash.MavenClean.MySQL.test01JDBC.main;
+package cn.airbash.MavenClean.MySQL.JDBC.main;
 
 import java.sql.Connection;
 import java.sql.SQLException;

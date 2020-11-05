@@ -1,4 +1,4 @@
-package cn.airbash.MavenClean.Apache.Test01Codec;
+package cn.airbash.MavenClean.Apache.codec;
 
 import org.apache.commons.codec.digest.DigestUtils;
 

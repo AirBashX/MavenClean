@@ -1,10 +1,10 @@
-package cn.airbash.MavenClean.Redis.test01Jedis.main;
+package cn.airbash.MavenClean.Redis.Jedis.test01Jedis.main;
 
 import java.util.HashMap;
 import java.util.Map;
 
-import cn.airbash.MavenClean.Redis.test01Jedis.Util.RedisUtil;
-import cn.airbash.MavenClean.Redis.test01Jedis.untity.User;
+import cn.airbash.MavenClean.Redis.Jedis.test01Jedis.Util.RedisUtils;
+import cn.airbash.MavenClean.Redis.Jedis.test01Jedis.untity.User;
 import redis.clients.jedis.Jedis;
 
 /**
@@ -22,7 +22,7 @@ public class Test03RedisHash {
 	 * ֱ�Ӵ������
 	 */
 	public static void hash01() {
-		Jedis jedis = RedisUtil.getJedis();
+		Jedis jedis = RedisUtils.getJedis();
 		String key="users";
 		if(jedis.exists(key)) {
 			Map<String, String> map = jedis.hgetAll(key);
@@ -43,7 +43,7 @@ public class Test03RedisHash {
 	 * ���������������
 	 */
 	public static void hash02() {
-		Jedis jedis = RedisUtil.getJedis();
+		Jedis jedis = RedisUtils.getJedis();
 		Integer id = 1;
 		String key = User.getKeyName(id);
 		if(jedis.exists(key)) {
@@ -64,6 +64,6 @@ public class Test03RedisHash {
 			jedis.hmset(key, hash);
 			System.out.println(user);
 		}
-		RedisUtil.close(jedis);
+		RedisUtils.close(jedis);
 	}
 }

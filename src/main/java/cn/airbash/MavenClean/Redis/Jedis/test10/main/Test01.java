@@ -1,8 +1,8 @@
-package cn.airbash.MavenClean.Redis.test10.main;
+package cn.airbash.MavenClean.Redis.Jedis.test10.main;
 
 import com.google.gson.Gson;
 
-import cn.airbash.MavenClean.Redis.test10.pojo.Student;
+import cn.airbash.MavenClean.Redis.Jedis.test10.pojo.Student;
 /**
  * ���Լ����ܷ��ȡ��redis
  */
@@ -18,13 +18,13 @@ public class Test01 {
 	public static void main(String[] args) {
 		
 		Jedis jedis = new Jedis("111.230.13.216", 6379);
-		//������ͨ��
+		//检测redis连通性
 		String ping = jedis.ping();
 		System.out.println(ping);
 		
 		Student student = new Student(1,"AKB48","Ů",50,"����");
 		
-		//��student����ת����String����
+		//将student实体类转化为json字符串
 		Gson gson = new Gson();
 		String json = gson.toJson(student);
 		
