@@ -1,6 +1,7 @@
 package cn.airbash.MavenClean.other.utils;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 /**
@@ -31,6 +32,13 @@ public class jacksonUtil {
 	 * @throws Exception
 	 */
 	public static <T> T json2object(String string,Class<T> javaType) throws Exception {
+		T t = mapper.readValue(string, javaType);
+		return t;
+	}
+	
+	public static <T> T arraysjson2object(String string,Class<T> javaType) throws Exception {
+		//用于兼容性(可以不加):当属性中有一个是数组且只有一个内容
+		mapper.configure(DeserializationFeature.ACCEPT_SINGLE_VALUE_AS_ARRAY,true);
 		T t = mapper.readValue(string, javaType);
 		return t;
 	}

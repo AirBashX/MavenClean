@@ -4,7 +4,7 @@ import org.junit.Test;
 
 import com.google.gson.Gson;
 
-import cn.airbash.MavenClean.entity.User;
+import cn.airbash.MavenClean.entity.user;
 import cn.airbash.MavenClean.redis.jedis.Utils.RedisUtils;
 import redis.clients.jedis.Jedis;
 
@@ -32,7 +32,7 @@ public class Test01 {
 	 */
 	@Test
 	public void test02() {
-		User student = new User(1, "张三");
+		user student = new user(1, "张三");
 		String json = gson.toJson(student);
 		jedis.set("test02", json);
 	}
@@ -43,7 +43,7 @@ public class Test01 {
 	@Test
 	public void test03() {
 		String string = jedis.get("test02");
-		User student = gson.fromJson(string,User.class);
+		user student = gson.fromJson(string,user.class);
 		System.out.println(student);
 	}
 
