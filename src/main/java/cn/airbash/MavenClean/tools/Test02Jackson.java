@@ -1,10 +1,10 @@
-package cn.airbash.MavenClean.other;
+package cn.airbash.MavenClean.tools;
 
 import org.junit.Test;
 
 import cn.airbash.MavenClean.entity.user;
 import cn.airbash.MavenClean.entity.userList;
-import cn.airbash.MavenClean.other.utils.jacksonUtil;
+import cn.airbash.MavenClean.utils.jacksonUtil;
 
 public class Test02Jackson {
 

@@ -1,4 +1,4 @@
-package cn.airbash.MavenClean.other.utils;
+package cn.airbash.MavenClean.utils;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.DeserializationFeature;

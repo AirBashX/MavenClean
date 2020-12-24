@@ -1,4 +1,4 @@
-package cn.airbash.MavenClean.tools;
+package cn.airbash.MavenClean.utils;
 
 import java.io.File;
 

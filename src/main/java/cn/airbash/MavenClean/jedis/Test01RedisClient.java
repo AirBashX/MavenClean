@@ -1,4 +1,4 @@
-package cn.airbash.MavenClean.redis.jedis;
+package cn.airbash.MavenClean.jedis;
 
 import org.junit.Before;
 import org.junit.Test;

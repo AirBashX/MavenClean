@@ -1,6 +1,6 @@
-package cn.airbash.MavenClean.redis.jedis;
+package cn.airbash.MavenClean.jedis;
 
-import cn.airbash.MavenClean.redis.jedis.Utils.RedisUtils;
+import cn.airbash.MavenClean.jedis.utils.RedisUtils;
 import redis.clients.jedis.Jedis;
 import redis.clients.jedis.JedisPool;
 import redis.clients.jedis.JedisPoolConfig;

@@ -1,10 +1,10 @@
-package cn.airbash.MavenClean.redis.jedis;
+package cn.airbash.MavenClean.jedis;
 
 import java.util.HashMap;
 import java.util.Map;
 
 import cn.airbash.MavenClean.entity.user;
-import cn.airbash.MavenClean.redis.jedis.Utils.RedisUtils;
+import cn.airbash.MavenClean.jedis.utils.RedisUtils;
 import redis.clients.jedis.Jedis;
 
 /**

@@ -1,11 +1,11 @@
-package cn.airbash.MavenClean.redis.jedis;
+package cn.airbash.MavenClean.jedis;
 
 import org.junit.Test;
 
 import com.google.gson.Gson;
 
 import cn.airbash.MavenClean.entity.user;
-import cn.airbash.MavenClean.redis.jedis.Utils.RedisUtils;
+import cn.airbash.MavenClean.jedis.utils.RedisUtils;
 import redis.clients.jedis.Jedis;
 
 /**
@@ -14,7 +14,7 @@ import redis.clients.jedis.Jedis;
  * @author ZSP
  *
  */
-public class Test01 {
+public class Test00 {
 	Jedis jedis = RedisUtils.getJedis();
 	Gson gson = new Gson();
 

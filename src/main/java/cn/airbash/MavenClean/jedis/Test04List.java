@@ -1,11 +1,11 @@
-package cn.airbash.MavenClean.redis.jedis;
+package cn.airbash.MavenClean.jedis;
 
 import java.util.Random;
 import java.util.UUID;
 
 import org.junit.Test;
 
-import cn.airbash.MavenClean.redis.jedis.Utils.RedisUtils;
+import cn.airbash.MavenClean.jedis.utils.RedisUtils;
 import redis.clients.jedis.Jedis;
 
 public class Test04List {
