@@ -3,7 +3,7 @@ package cn.airbash.MavenClean.jedis;
 import java.util.HashMap;
 import java.util.Map;
 
-import cn.airbash.MavenClean.entity.user;
+import cn.airbash.MavenClean.entity.User;
 import cn.airbash.MavenClean.jedis.utils.RedisUtils;
 import redis.clients.jedis.Jedis;
 
@@ -11,7 +11,7 @@ import redis.clients.jedis.Jedis;
  * hash数值操作
  * @author ZSP
  */
-public class Test03Hash {
+public class Test04Hash {
 
 	public static void main(String[] args) {
 		//hash01();
@@ -38,13 +38,13 @@ public class Test03Hash {
 	public static void hash02() {
 		Jedis jedis = RedisUtils.getJedis();
 		Integer id = 1;
-		String key = user.getKeyName(id);
+		String key = User.getKeyName(id);
 		if(jedis.exists(key)) {
 			Map<String, String> map = jedis.hgetAll(key);
-			user user = new user(Integer.valueOf(map.get("id")), map.get("name"));
+			User user = new User(Integer.valueOf(map.get("id")), map.get("name"));
 			System.out.println(user);
 		}else {
-			user user = new user(1, "redis");
+			User user = new User(1, "redis");
 			HashMap<String, String> hash = new HashMap<String, String>();
 			hash.put("id", user.getId()+"");
 			hash.put("name", user.getName());

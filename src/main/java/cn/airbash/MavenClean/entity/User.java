@@ -2,7 +2,7 @@ package cn.airbash.MavenClean.entity;
 
 import java.io.Serializable;
 
-public class user implements Serializable{
+public class User implements Serializable{
 	
 	private static final long serialVersionUID = -676375262332787158L;
 
@@ -22,10 +22,10 @@ public class user implements Serializable{
 		this.name = name;
 	}
 	
-	public user() {
+	public User() {
 		super();
 	}
-	public user(int id, String name) {
+	public User(int id, String name) {
 		super();
 		this.id = id;
 		this.name = name;

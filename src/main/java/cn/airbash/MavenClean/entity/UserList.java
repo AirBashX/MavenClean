@@ -3,7 +3,7 @@ package cn.airbash.MavenClean.entity;
 import java.io.Serializable;
 import java.util.List;
 
-public class userList implements Serializable{
+public class UserList implements Serializable{
 
 	private static final long serialVersionUID = -3421112948139834672L;
 
@@ -22,12 +22,12 @@ public class userList implements Serializable{
 	public void setName(List<String> name) {
 		this.name = name;
 	}
-	public userList(int id, List<String> name) {
+	public UserList(int id, List<String> name) {
 		super();
 		this.id = id;
 		this.name = name;
 	}
-	public userList() {
+	public UserList() {
 		super();
 	}
 	@Override

@@ -1,4 +1,4 @@
-package cn.airbash.MavenClean.utils;
+package cn.airbash.MavenClean.utils.json;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.DeserializationFeature;
@@ -8,7 +8,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
  * jackson工具类
  * @author ZSP
  */
-public class jacksonUtil {
+public class JacksonUtil {
 	private static ObjectMapper mapper = new ObjectMapper();
 	
 

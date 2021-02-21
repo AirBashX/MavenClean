@@ -8,7 +8,7 @@ import org.junit.Test;
 import cn.airbash.MavenClean.jedis.utils.RedisUtils;
 import redis.clients.jedis.Jedis;
 
-public class Test04List {
+public class Test05List {
 
 	private static Jedis jedis=RedisUtils.getJedis();;
 

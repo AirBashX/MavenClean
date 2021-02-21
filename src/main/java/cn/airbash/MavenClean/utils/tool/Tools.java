@@ -1,4 +1,4 @@
-package cn.airbash.MavenClean.tools;
+package cn.airbash.MavenClean.utils.tool;
 
 import java.io.File;
 import java.io.IOException;
@@ -25,7 +25,7 @@ import cn.hutool.http.HttpUtil;
  * @author ZSP
  *
  */
-public class Test01Utils {
+public class Tools {
 
 	/**
 	 * 散列值相关

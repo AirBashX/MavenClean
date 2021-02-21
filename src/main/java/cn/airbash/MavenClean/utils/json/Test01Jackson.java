@@ -1,14 +1,13 @@
-package cn.airbash.MavenClean.tools;
+package cn.airbash.MavenClean.utils.json;
 
 import org.junit.Test;
 
-import cn.airbash.MavenClean.entity.user;
-import cn.airbash.MavenClean.entity.userList;
-import cn.airbash.MavenClean.utils.jacksonUtil;
+import cn.airbash.MavenClean.entity.User;
+import cn.airbash.MavenClean.entity.UserList;
 
-public class Test02Jackson {
+public class Test01Jackson {
 
-	user user = new user();
+	User user = new User();
 	
 	/**
 	 * object>>>string;string>>>object
@@ -16,9 +15,9 @@ public class Test02Jackson {
 	@Test
 	public void test01() {
 		try {
-			String string = jacksonUtil.object2json(user);
+			String string = JacksonUtil.object2json(user);
 			System.out.println(string);
-			user user2 = jacksonUtil.arraysjson2object(string, user.class);
+			User user2 = JacksonUtil.arraysjson2object(string, User.class);
 			System.out.println(user2);
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -32,9 +31,9 @@ public class Test02Jackson {
 	public void test02() {
 		String string="{\"id\": 1,\"name\": [\"A1\", \"A2\"]}";
 		try {
-			userList user = jacksonUtil.arraysjson2object(string, userList.class);
+			UserList user = JacksonUtil.arraysjson2object(string, UserList.class);
 			System.out.println(user);
-			 userList user2 = jacksonUtil.json2object(string, userList.class);
+			 UserList user2 = JacksonUtil.json2object(string, UserList.class);
 			System.out.println(user2);
 		} catch (Exception e) {
 			e.printStackTrace();

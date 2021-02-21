@@ -17,11 +17,19 @@ public class RedisUtils {
 		jp = new JedisPool(jpc,path,port);
 	}
 	
+	/**
+	 * 获取jedis
+	 * @return jedis
+	 */
 	public static Jedis getJedis() {
 		Jedis jedis = jp.getResource();
 		return jedis;
 	}
 	
+	/**
+	 * 关闭jedis
+	 * @param jedis
+	 */
 	public static void close(Jedis jedis) {
 		jedis.close();
 	}

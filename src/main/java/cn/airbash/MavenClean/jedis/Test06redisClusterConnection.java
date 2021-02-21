@@ -7,7 +7,7 @@ import redis.clients.jedis.HostAndPort;
 import redis.clients.jedis.JedisCluster;
 import redis.clients.jedis.JedisPoolConfig;
 
-public class Test05redisClusterConnection{
+public class Test06redisClusterConnection{
 	public static void main(String[] args) {
 		JedisPoolConfig jedisPoolConfig = new JedisPoolConfig();
 		Set<HostAndPort> nodes = new HashSet<HostAndPort>();
